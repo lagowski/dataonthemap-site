@@ -3,7 +3,7 @@
 from pathlib import Path
 
 EMAIL = "ainews402@gmail.com"
-UPDATED = "October 8, 2026"
+UPDATED = "October 9, 2026"
 ROOT = Path(__file__).parent
 
 PROFILES = [
@@ -46,6 +46,11 @@ Instagram account and Facebook Page;</li>
 learn which videos people find useful.</li></ul>
 <p>The app does not offer accounts to the public and does not access anyone else's data.</p></div>
 <div class="card"><h2>Follow Data on the Map</h2><p>{follow}</p></div>
+<div class="card yt"><picture><source srcset="assets/developed-with-youtube-light-text.png" media="(prefers-color-scheme: dark)">
+<img src="assets/developed-with-youtube-dark-text.png" alt="Developed with YouTube" width="300" height="107"></picture>
+<p>The Data on the Map Publisher app uses the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube
+API Services</a>. Read how it handles data in our <a href="privacy/#youtube">Privacy Policy</a>, and the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p></div>
 <p>Read our <a href="privacy/">Privacy Policy</a> and <a href="terms/">Terms of Service</a>. Questions: {{MAIL}}.</p>
 """)
 
@@ -63,8 +68,9 @@ to our own channel and to read our own channel's information and video statistic
 account's basic profile and to send videos we made to our own TikTok inbox as drafts. We review and publish every draft
 ourselves in the TikTok app.</li>
 <li><strong>Instagram and Facebook</strong> (permissions <code>instagram_basic</code>, <code>instagram_content_publish</code>,
-<code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>pages_manage_posts</code>): permission to publish
-our own videos to our own Instagram account and Facebook Page and to read their basic information and engagement.</li></ul>
+<code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>pages_manage_posts</code>, and, when granted,
+<code>instagram_manage_insights</code> and <code>read_insights</code>): permission to publish our own videos to our own
+Instagram account and Facebook Page and to read their basic information, engagement and view counts.</li></ul>
 <h2>How we use it</h2><p>We use this access only to publish Data on the Map videos on our own accounts and to measure how
 our own videos perform. We do not use it for advertising, we do not sell it, and we do not share it with third parties
 except as needed to deliver it to the platforms themselves.</p>
@@ -74,6 +80,23 @@ Data Policy</a>, including the Limited Use requirements. The app uses the
 <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>; by using the
 app you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2 id="youtube">YouTube API Services</h2>
+<p>The Data on the Map Publisher app uses the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube
+API Services</a>. By using the app you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of
+Service</a>; please also read the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<ul><li><strong>What it accesses:</strong> only our own YouTube channel: its name and id, the videos we upload, and their
+public statistics (views, likes, comments).</li>
+<li><strong>What it stores:</strong> the OAuth token for our channel, the ids of the videos we uploaded, and snapshots of
+those videos' statistics 24 and 72 hours after publishing, to learn when our videos reach people best.</li>
+<li><strong>How it is used and shared:</strong> only to publish our videos and measure them. It is not shared with anyone,
+internal or external, and it is not used for advertising.</li>
+<li><strong>Cookies and device storage:</strong> the app runs on our own server and stores nothing on visitors' devices;
+this website uses no cookies.</li>
+<li><strong>Revoking access:</strong> access can be revoked at any time on the
+<a href="https://security.google.com/settings/security/permissions">Google security settings page</a>
+(<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>).</li>
+<li><strong>Deletion:</strong> when access is revoked, we delete the stored token and the YouTube data above within 7 days.
+We keep the statistics of our own videos only while the app stays authorized. To ask for deletion at any time, email {MAIL}.</li></ul>
 <h2>TikTok</h2><p>Our use of TikTok follows the
 <a href="https://www.tiktok.com/legal/page/global/tik-tok-developer-terms-of-service/en">TikTok Developer Terms of
 Service</a>. We do not collect data about other TikTok users. Access can be revoked in the TikTok app under Settings and

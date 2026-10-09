@@ -17,3 +17,4 @@ textarea{width:100%;font-family:ui-monospace,monospace;background:var(--card);co
 button{font:inherit;padding:6px 14px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 footer a{color:var(--muted);margin-right:14px}
+.yt img{display:block;height:auto;width:300px;max-width:100%;margin:-18px 0 -12px -26px}
