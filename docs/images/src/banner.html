@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- Data on the Map site README banner (v3). Built from the site's own parts: style.css tokens (paper, ink, one teal),
+     the header (logo tile + bold brand + nav), h1/.lead/.card, and the logo's globe (assets/logo-120.png: ring, equator,
+     one meridian, a teal pin with a paper halo) drawn large as the site map: one pin per page build.py writes.
+     Render: ?theme=dark|light, 1280x640 @2x. -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&family=Roboto+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+:root{--bg:#15171C;--fg:#F1EDE4;--muted:#A8A295;--accent:#4FB3A9;--card:#1D2026;--line:#2C3038;--globe:#F1EDE4;--thin:#3A3F49}
+:root.light{--bg:#F4F1EA;--fg:#15171C;--muted:#6E695E;--accent:#0E6E66;--card:#FBFAF6;--line:#DCD6C8;--globe:#15171C;--thin:#CFC8B8}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1280px;height:640px;overflow:hidden;background:var(--bg);color:var(--fg);font-family:Roboto,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+header{position:absolute;left:48px;right:48px;top:34px;display:flex;align-items:center;gap:13px;font-weight:800;font-size:30px}
+header img{width:52px;height:52px;border-radius:13px}
+header nav{margin-left:auto;font-weight:400;font-size:17px;color:var(--muted);display:flex;gap:22px}
+header nav b{color:var(--accent);font-weight:500}
+h1{position:absolute;left:48px;top:150px;width:560px;font-size:58px;line-height:1.1;font-weight:800;letter-spacing:-.02em}
+.lead{position:absolute;left:48px;top:300px;width:540px;font-size:20px;line-height:1.5;color:var(--muted)}
+.card{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 15px 12px;width:208px}
+.card b{display:block;font:500 14.5px "Roboto Mono",monospace;color:var(--accent)}
+.card span{display:block;font-size:14px;line-height:1.35;margin-top:3px}
+.card small{color:var(--muted);font-size:14px}
+.foot{position:absolute;left:48px;top:468px;width:560px;border-top:1px solid var(--line);padding-top:18px;font-size:15.5px;line-height:1.7;color:var(--muted)}
+.foot code{font:500 15px "Roboto Mono",monospace;color:var(--fg)}.foot code s{text-decoration:none;color:var(--accent)}
+.foot b{color:var(--fg);font-weight:700}
+svg{position:absolute;inset:0}
+</style></head><body>
+<script>if(new URLSearchParams(location.search).get('theme')==='light')document.documentElement.classList.add('light')</script>
+<svg width="1280" height="640" fill="none">
+ <g transform="translate(850 368)">
+  <g stroke="var(--thin)" stroke-width="1.5"><ellipse rx="183" ry="222"/><ellipse rx="222" ry="78"/><path d="M-192 -111H192M-192 111H192"/></g>
+  <g stroke="var(--globe)" stroke-width="13"><circle r="222"/><path d="M-222 0H222"/><ellipse rx="100" ry="222"/></g>
+  <g stroke="var(--accent)" stroke-width="1.6"><path d="M106 -118L180 -198"/><path d="M150 -20L190 -66"/><path d="M128 96L190 78"/><path d="M40 170L150 207"/></g>
+  <g fill="var(--accent)" stroke="var(--bg)" stroke-width="7"><circle cx="106" cy="-118" r="26"/><circle cx="150" cy="-20" r="15"/><circle cx="128" cy="96" r="15"/><circle cx="40" cy="170" r="15"/></g>
+ </g>
+</svg>
+<header><img src="../../../assets/logo-120.png">Data on the Map<nav><b>Home</b><span>Privacy</span><span>Terms</span></nav></header>
+<h1>The world explained with data.</h1>
+<p class="lead">The channel's public home, privacy policy and terms: the pages its publisher app's listings on TikTok, Meta and Google link to.</p>
+<div class="foot"><code><s>$</s> python3 build.py</code> &nbsp;writes <b>4</b> static pages for GitHub Pages<br><b>0</b> cookies &middot; <b>0</b> trackers &middot; <b>0</b> third-party requests &middot; <b>0</b> web fonts</div>
+
+<div class="card" style="left:1030px;top:118px"><b>/</b><span>Home <small>&middot; what the channel and the app do</small></span></div>
+<div class="card" style="left:1040px;top:256px"><b>/privacy/</b><span>Privacy Policy <small>&middot; what the app reads, keeps and deletes</small></span></div>
+<div class="card" style="left:1040px;top:412px"><b>/terms/</b><span>Terms of Service</span></div>
+<div class="card" style="left:1000px;top:536px"><b>/tiktok-callback/</b><span>Shows the one-time code <small>&middot; sends nothing</small></span></div>
+</body></html>

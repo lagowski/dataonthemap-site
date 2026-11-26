@@ -1,0 +1,52 @@
+{
+  "product": "Data on the Map site",
+  "kind": "frontend (static HTML written by build.py)",
+  "extracted_from": {
+    "colours": "style.css :root (light) and @media (prefers-color-scheme:dark)",
+    "type": "style.css body: system-ui stack ending in Roboto, 17px/1.65; brand 800; h1 clamp(30px,6vw,44px)",
+    "header": "build.py page(): .brand (logo tile 40px, radius 10px, bold name) + nav Home / Privacy / Terms",
+    "card": "style.css .card: 1px line, radius 14px, padding 20px 22px",
+    "button": "style.css button (accent fill, radius 8px)",
+    "footer": "style.css footer: top rule, muted 14px",
+    "logo": "assets/logo-120.png, favicon.png",
+    "app_icon": "assets/app-icon-1024.png (brand logo A of dataonthemap-studio: ring, equator, one meridian, a teal pin with a paper halo)"
+  },
+  "fonts": {
+    "sans": "Roboto (the last named face of the site's system-ui stack; the site itself loads no web font)",
+    "mono": "Roboto Mono (paths and the build command only)"
+  },
+  "radius": {
+    "card": 14,
+    "logo": 10,
+    "button": 8
+  },
+  "light": {
+    "bg": "#F4F1EA",
+    "fg": "#15171C",
+    "muted": "#6E695E",
+    "accent": "#0E6E66",
+    "card": "#FBFAF6",
+    "line": "#DCD6C8"
+  },
+  "dark": {
+    "bg": "#15171C",
+    "fg": "#F1EDE4",
+    "muted": "#A8A295",
+    "accent": "#4FB3A9",
+    "card": "#1D2026",
+    "line": "#2C3038"
+  },
+  "concept": {
+    "banner": "The page top bar carries the name as the site does (logo tile + brand + nav) and the home h1 is the headline. The logo globe is drawn large from its own geometry and used as the site map: one teal pin per page build.py writes, each with a .card callout holding its path.",
+    "diagram": "The flow runs along the globe equator; each stage is a logo pin with a .card callout, edge labels sit on the equator. Site header with a How it works nav item and the footer rule."
+  },
+  "assets": {
+    "docs/images/banner.png": "src/banner.html?theme=dark, 1280x640 @2x",
+    "docs/images/banner-light.png": "src/banner.html?theme=light, 1280x640 @2x",
+    "docs/images/how-it-works.png": "src/diagram.html, 1600x900 @2x (light scheme on an opaque paper frame: reads on GitHub dark and light)"
+  },
+  "motif": {
+    "globe": "ring + equator + one meridian in ink, stroke about 6% of the diameter; thin graticule lines in the line colour",
+    "pin": "accent dot with a halo in the page background colour"
+  }
+}
